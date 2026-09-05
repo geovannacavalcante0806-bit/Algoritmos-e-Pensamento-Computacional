@@ -1,53 +1,99 @@
-# Gerenciador de Notas de Alunos em C
+```markdown
+# Calculadora em C (20 Funções)
 
-Um programa interativo e modular desenvolvido em linguagem C para automatizar a leitura de dados, cálculo de médias aritméticas e verificação de aprovação de alunos. Este projeto reúne e exemplifica na prática todas as principais estruturas fundamentais da linguagem.
+**Aluno:** [Seu Nome Aqui]  
+**Disciplina:** Algoritmos e Programação  
 
----
+## 1. Título da Atividade
+Desenvolvimento de Calculadora Multiuso em Linguagem C com Menu Interativo.
 
-**Funcionalidades**
+## 2. Nome do Aluno
+[Seu Nome Aqui]
 
-* **Entrada de dados dinâmica**: Lê o nome do aluno e 3 notas individuais via terminal.
-* **Processamento modular**: Utiliza funções dedicadas para o cálculo da média.
-* **Avaliação automática**: Compara a média obtida com a nota mínima de corte (6.0) para definir o status.
-* **Repetição sequencial**: Processa a quantidade desejada de alunos em lote através de um laço de repetição.
+## 3. Objetivo do Programa
+Criar um programa em linguagem C que resolva cálculos matemáticos do dia a dia por meio de um menu no terminal. O objetivo é aplicar conceitos básicos de programação, como estruturas de repetição (`do-while`), controle de fluxo (`if/else`), entrada e saída de dados (`scanf`/`printf`) e inclusão de bibliotecas nativas (`math.h`).
 
----
+## 4. Funcionamento do Programa
+O programa roda dentro de um laço `do-while`. Quando executado, ele limpa ou exibe na tela um menu numerado de 0 a 20:
 
-**Estrutura da Aplicação**
-
-* **Estrutura de Repetição (`while`)**: Controla a execução do fluxo para processar a quantidade $N$ de alunos digitada pelo usuário.
-* **Entrada e Saída (`printf` e `scanf`)**: Realiza a interface de texto para captura de dados e exibição formatada dos resultados.
-* **Estrutura Condicional (`if` e `else`)**: Avalia a média do aluno para determinar a aprovação ou reprovação.
-* **Funções Customizadas**:
-* `calcular_media`: Função com retorno `float` responsável pela média aritmética das três notas.
-* `mostrar_resultado`: Função do tipo `void` responsável por formatar a impressão do boletim na tela.
-
-
+1. O usuário digita o número da opção desejada.
+2. O programa pede os valores de entrada necessários (como `a` e `b`, ou notas e pesos).
+3. É feita uma validação simples para evitar erros na execução (como divisão por zero ou altura igual a zero).
+4. O resultado é calculado e mostrado direto na tela.
+5. O menu reaparece automaticamente para uma nova operação até que a opção `0` seja informada para sair.
 
 ---
 
-**Tipos de Dados Utilizados**
+## 5. Relação das 20 Funções Implementadas
 
-| Tipo | Variável | Descrição |
-| --- | --- | --- |
-| `int` | `quantidade`, `i` | Contadores e total de alunos cadastrados. |
-| `char[]` | `nome` | Vetor de caracteres (string) para armazenar os nomes. |
-| `float` | `n1`, `n2`, `n3`, `media` | Números decimais para notas e médias. |
+| Opção | Função | Descrição / Fórmula |
+| :---: | :--- | :--- |
+| **1** | Soma | `a + b` |
+| **2** | Subtração | `a - b` |
+| **3** | Multiplicação | `a * b` |
+| **4** | Divisão | `a / b` *(com tratamento para $b \neq 0$)* |
+| **5** | Potência | $a^b$ utilizando a função `pow()` |
+| **6** | Média Aritmética | `(a + b) / 2` |
+| **7** | Produto mais Soma | `(a * b) + (a + b)` |
+| **8** | Dobro de A mais B | `(2 * a) + b` |
+| **9** | Porcentagem | `(a / b) * 100` |
+| **10** | Triplo de A menos B | `(3 * a) - b` |
+| **11** | Média Ponderada | `((a * peso1) + (b * peso2)) / (peso1 + peso2)` |
+| **12** | Soma dos Quadrados | `(a * a) + (b * b)` |
+| **13** | Distância entre dois Valores | `|a - b|` utilizando a função `fabs()` |
+| **14** | Celsius para Fahrenheit | `(a * 9/5) + 32` |
+| **15** | Potência ($a^b$) | Recálculo de potência via `pow(a, b)` |
+| **16** | Área do Triângulo | `(base * altura) / 2` |
+| **17** | Fahrenheit para Celsius | `(a - 32) * (5/9)` |
+| **18** | Área do Retângulo | `base * altura` |
+| **19** | Desconto (%) | `a - (a * (b / 100))` |
+| **20** | Cálculo de IMC | `peso / (altura * altura)` |
 
 ---
 
-**Como Compilar e Executar**
+## 6. Funções Obrigatórias Requeridas
+* **Cálculo de Área**: Implementado nas opções **16** (Área do Triângulo: $\frac{\text{base} \times \text{altura}}{2}$) e **18** (Área do Retângulo: $\text{base} \times \text{altura}$).
+* **Cálculo de IMC**: Implementado na opção **20**, recebendo o peso em quilos e a altura em metros ($\frac{\text{peso}}{\text{altura}^2}$).
 
-1. Clone ou baixe o código-fonte em seu ambiente de desenvolvimento.
-2. Abra o terminal na pasta do arquivo e compile com o GCC:
+---
+
+## 7. Instruções para Compilação e Execução
+
+### Pré-requisitos
+* Compilador C instalado (ex: GCC).
+
+### Passo a passo no Terminal
+1. Navegue até a pasta onde o arquivo `main.c` está salvo:
+   ```bash
+   cd caminho/da/sua/pasta
+
+```
+
+2. Compile o código usando o GCC (a flag `-lm` vincula a biblioteca `math.h`):
 ```bash
-gcc main.c -o gerenciador_notas
+gcc main.c -o calculadora -lm
 
 ```
 
 
-3. Execute a aplicação compilada:
+3. Execute o programa gerado:
+* **Linux/macOS:**
 ```bash
-./gerenciador_notas
+./calculadora
+
+```
+
+
+* **Windows (Prompt/PowerShell):**
+```cmd
+calculadora.exe
+
+```
+
+
+
+
+
+```
 
 ```
