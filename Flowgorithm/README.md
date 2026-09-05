@@ -1,90 +1,67 @@
-# Flowgorithm - 20 Expressões Matemáticas
+# Calculadora Matemática em Flowgorithm
 
-## Sobre o projeto
-
-Este projeto foi desenvolvido utilizando o **Flowgorithm 4.2**, com o objetivo de praticar lógica de programação, estruturas condicionais, entrada e saída de dados e operações matemáticas.
-
-O programa possui um menu com **20 opções de cálculos diferentes**. O usuário escolhe uma operação e informa os valores necessários para que o algoritmo faça o cálculo e mostre o resultado.
-
-## Operações disponíveis
-
-1. Soma
-2. Subtração
-3. Multiplicação
-4. Divisão
-5. Potência
-6. Média aritmética
-7. Produto + soma
-8. Dobro de A + B
-9. Porcentagem de A sobre B
-10. Triplo de A - B
-11. Média ponderada
-12. Soma dos quadrados
-13. Distância entre dois valores
-14. Conversão de Celsius para Fahrenheit
-15. Potência de A elevado a B
-16. Área do triângulo
-17. Conversão de Fahrenheit para Celsius
-18. Área do retângulo
-19. Preço com desconto percentual
-20. Preço com acréscimo percentual
-
-## Ferramenta utilizada
-
-* **Flowgorithm 4.2**
-
-## Como executar
-
-1. Baixe ou clone este repositório.
-2. Abra o arquivo `flowgoti.fprg` utilizando o Flowgorithm.
-3. Execute o fluxograma.
-4. Escolha uma das 20 opções disponíveis no menu.
-5. Digite os valores solicitados.
-6. O resultado do cálculo será exibido na tela.
-
-## Objetivo
-
-O objetivo do projeto é praticar conceitos básicos de lógica de programação e aprender a transformar expressões matemáticas em algoritmos.
-
-Durante o desenvolvimento foram utilizados:
-
-* Variáveis;
-* Entrada de dados;
-* Saída de dados;
-* Operações matemáticas;
-* Estruturas condicionais (`if/else`);
-* Expressões aritméticas;
-* Organização de um algoritmo através de um menu de opções.
-
-## Estrutura do projeto
-
-```text
-20-expressoes-matematicas/
-│
-├── flowgoti.fprg
-└── README.md
-```
-
-### `flowgoti.fprg`
-
-É o arquivo principal do projeto. Nele está o fluxograma desenvolvido no Flowgorithm com as 20 operações matemáticas.
-
-### `README.md`
-
-Arquivo com as informações sobre o projeto e as instruções para execução.
-
-## Possíveis melhorias
-
-Algumas coisas que podem ser adicionadas ao projeto futuramente:
-
-* Validação dos valores digitados;
-* Tratamento para divisão por zero;
-* Uma opção para repetir os cálculos;
-* Uma opção para encerrar o programa;
-* Novas operações matemáticas.
-
-## Autora
+## Nome do Aluno
 
 **Geovanna Vitória**
 
-Projeto desenvolvido para estudos e prática de lógica de programação utilizando o Flowgorithm.
+## Objetivo do Programa
+
+O objetivo deste programa é aplicar os conceitos fundamentais de lógica de programação utilizando o Flowgorithm. A atividade permite praticar entrada e saída de dados, operações matemáticas, estruturas condicionais e manipulação de variáveis por meio de uma calculadora com múltiplas funcionalidades.
+
+## Descrição do Funcionamento
+
+O programa apresenta ao usuário um menu contendo 20 opções de cálculos matemáticos. Após selecionar a função desejada, o usuário informa os valores necessários para a operação escolhida. Em seguida, o sistema realiza o cálculo e exibe o resultado na tela.
+
+A calculadora foi desenvolvida para demonstrar diferentes aplicações de expressões matemáticas e fórmulas utilizadas no dia a dia.
+
+## Funções Implementadas
+
+1. Soma de dois números;
+2. Subtração de dois números;
+3. Multiplicação de dois números;
+4. Divisão de dois números;
+5. Potência;
+6. Média aritmética;
+7. Produto mais soma;
+8. Dobro de um número somado a outro valor;
+9. Porcentagem;
+10. Triplo de um número menos outro valor;
+11. Média ponderada;
+12. Soma dos quadrados;
+13. Diferença entre dois valores;
+14. Conversão de Celsius para Fahrenheit;
+15. Cálculo de IMC
+16. Cálculo da área de um triângulo;
+17. Conversão de Fahrenheit para Celsius;
+18. Cálculo da área de um retângulo;
+19. Cálculo de desconto percentual;
+20. Cálculo de acréscimo percentual.
+
+## Funções Obrigatórias
+
+### Cálculo de IMC
+
+O programa possui uma função destinada ao cálculo do Índice de Massa Corporal (IMC), utilizando os valores de peso e altura informados pelo usuário.
+
+### Cálculo de Área
+
+O programa possui funções de cálculo de área, incluindo:
+
+* Área do triângulo;
+* Área do retângulo.
+
+## Instruções para Execução
+
+1. Abrir o arquivo `.fprg` no Flowgorithm;
+2. Executar o fluxograma utilizando a opção **Run**;
+3. Escolher uma das opções apresentadas no menu;
+4. Informar os valores solicitados pelo programa;
+5. Visualizar o resultado exibido na tela.
+
+## Ferramenta Utilizada
+
+* Flowgorithm
+
+## Considerações Finais
+
+Este projeto foi desenvolvido com a finalidade de praticar conceitos básicos de programação e reforçar o aprendizado de operações matemáticas, estruturas de decisão e construção de algoritmos.
