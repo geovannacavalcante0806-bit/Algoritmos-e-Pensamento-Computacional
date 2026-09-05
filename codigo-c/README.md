@@ -1,8 +1,4 @@
-Aqui está a versão completa e corrigida do seu **README.md**.
 
-Esta versão foi atualizada para **refletir exatamente a implementação do seu código C**: a **opção 15** atua como **Potência** ($a^b$) e a **opção 20** como **Cálculo de IMC**.
-
-```markdown
 # Calculadora em C (20 Funções)
 
 **Aluno:** [Seu Nome Aqui]  
@@ -14,7 +10,7 @@ Esta versão foi atualizada para **refletir exatamente a implementação do seu 
 Desenvolvimento de Calculadora Multiuso em Linguagem C com Menu Interativo.
 
 ## 2. Nome do Aluno
-[Seu Nome Aqui]
+Geovana Vitoria
 
 ## 3. Objetivo do Programa
 Criar um programa em linguagem C que resolva cálculos matemáticos por meio de um menu no terminal. O objetivo é aplicar conceitos fundamentais de programação, como estruturas de repetição (`do-while`), controle de fluxo (`if/else`), entrada e saída de dados (`scanf`/`printf`) e integração com a biblioteca matemática nativa (`math.h`).
